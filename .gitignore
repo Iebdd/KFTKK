@@ -2,6 +2,23 @@
 **.fdb_latexmk
 **.fls
 **.log
+**.out
+**.upa
+**.upb
+**.xdv
 **.synctex.gz
 .DS_Store
+**/Papers
 **/PDFs
+**/Quellen
+**/Book PDF
+**/Summary_Challenge
+**/Prüfung
+**/DMTT
+**/ETW
+**/STUK2
+**/AGT
+**/DMK
+**/ETKK
+**/LATKK
+**/STUK1
