@@ -1,0 +1,19 @@
+\documentclass{article}
+
+\usepackage{lipsum}
+\usepackage[margin=2cm,landscape,a3paper]{geometry}
+\usepackage{background}
+\SetBgScale{1}
+\SetBgAngle{0}
+\SetBgContents{\rule{2pt}{\textheight}\hspace{21cm}\rule{2pt}{\textheight}}
+\SetBgHshift{0cm}
+\pagestyle{empty}
+\makeatletter
+\let\ps@plain\ps@empty
+\makeatletter
+\begin{document}
+	\begin{tikzpicture}
+		\draw (10, 5) 
+	\end{tikzpicture}
+	\newpage
+\end{document}
