@@ -1,19 +1,47 @@
 \documentclass{article}
 
+\usepackage{silence}
+\usepackage{vwcol}
 \usepackage{lipsum}
+\usepackage{setspace}
+\usepackage{makecell}
+\usepackage{multicol}
+%\usepackage{sectsty}
 \usepackage[margin=2cm,landscape,a3paper]{geometry}
+\WarningsOff[everypage]% Suppress warnings related to package everypage
 \usepackage{background}
 \SetBgScale{1}
 \SetBgAngle{0}
-\SetBgContents{\rule{2pt}{\textheight}\hspace{21cm}\rule{2pt}{\textheight}}
+\SetBgContents{\rule{2pt}{\textheight}\hspace{19cm}\rule{2pt}{\textheight}}
 \SetBgHshift{0cm}
 \pagestyle{empty}
 \makeatletter
+%\allsectionsfont{\centering}
 \let\ps@plain\ps@empty
 \makeatletter
 \begin{document}
-	\begin{tikzpicture}
-		\draw (10, 5) 
-	\end{tikzpicture}
-	\newpage
+\setstretch{1.30}
+\begin{multicols}{3}
+%\begin{vwcol}[widths={0.25, 0.5, 0.25}, sep=.8cm, rule=0pt, indent=1em, siderule=false]
+	\textbf{Loaded questions:} Loaded questions are questions with an assumption built into it already. The potential answer is only of minor importance. More important is the implication of the question itself, as it implants an idea in one's head which they might not have had before. \\
+	%\vspace{5cm}
+
+	\textbf{Ad Hominem:} Literally '\textit{to the person}' is an argument which targets a person's characteristics or attributes in an attempt to make them seem unfit to be making this kind of argument, instead of addressing the argument itself. A common \textit{ad hominem} exchange goes as follows: 'A makes a claim \textit{x}, B asserts that A holds a property that is unwelcome, and hence B concludes that argument \textit{x} is wrong.'\\
+	\textbf{Appeal to Authority:} With an appeal to authority it is the position the person is holding which makes their claims true, not the arguments of the claim. In an appeal to authority one can also reference themselves, claiming their position makes the claim true, while perhaps not even providing arguments.\\
+	\columnbreak
+	\section*{Was climate change just a fad?} 
+	\subsection*{\textit{The worst seems to behind us, so why not enjoy ourselves for once?}}
+	\Large
+	The doomsayers and climate terrorists are ever growing louder and continously disrupt our everyday lives. Little girls from Sweden scream of climate catastrophe. Meanwhile I was hard at work, to bring you my new book which uses data that proves that, for 5 years now, temperatures have actually been decreasing again. This is not overly surprising considering the substantial decrease in carbon emissions by western countries in both relative and absolute numbers which are historically the largest polluters. So when I, at long last, enjoyed the afternoon from my porch, I could already feel the difference, as the breeze underlined the perfect temperature outside. Why dream about the future, when it is already here? \\
+	\columnbreak
+	\normalsize
+	\textbf{Appeal to Emotion:} In an appeal to emotion, one tries to distract from the argument of the claim itself, instead trying to elicit strong emotions, which serve to distract from coming to a rational conclusion. Appealed emotions can, for example, be \textit{fear} or \textit{guilt} but also \textit{pride} or \textit{compassion}. This fallacy only applies if the emotion to be invoked is irrelevant to the argument.\\
+	%\vspace{5cm}
+	\textbf{False Cause:} A false cause is established, when a potential relationship between two things is interpreted as one causing the other. An example is the global decrease in piracy, which happened simultaneously as the increase in temperature, so one could erroneously claim that piracy and global warming are directly inversely proportional to each other.\\
+	%\vspace{5cm}
+	\textbf{Ambiguity:} A fallacy of ambiguity is an intentionally unclear statement in order to convey a message, which, if challenged, can be deflected to actually be meaning something else. Common applications include literal interpretations of phrasemes like 'kicking somebody out' meaning to actually physically assaulting them.\\
+	%\vspace{5cm}
+	\textbf{Anecdote:} Anecdotes are personal testimonies and limited to personal perception. This can often be a much easier point to argue for as there is no continuum of experiences, which makes a clear statement difficult. For example: 'I have smoked 20 cigarettes per day for the last 30 years and I am fine. Thus smoking does not cause cancer.'\\
+\end{multicols}
+%\end{vwcol}
 \end{document}

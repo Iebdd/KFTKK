@@ -6,10 +6,17 @@
 **.upa
 **.m4a
 **.upb
+**.psd
 **.xdv
+**.bbl
+**.svg
+**.bcf
+**.blg
+**.run.xml
 **.synctex.gz
 .DS_Store
 **/Papers
+**/Powerpoint
 **/PDFs
 **/Quellen
 **/Book PDF
