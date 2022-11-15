@@ -1,0 +1,48 @@
+\documentclass{article}
+
+\usepackage{geometry}
+\usepackage{makecell}
+\usepackage{array}
+\usepackage{multicol}
+\usepackage[ngerman=ngerman-x-latest]{hyphsubst}
+\usepackage{setspace}
+\usepackage{changepage}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage[table]{xcolor}
+\newcolumntype{?}{!{\vrule width 1pt}}
+\renewcommand\theadalign{tl}
+\setstretch{1.10}
+\setlength{\parindent}{0pt}
+
+\geometry{top=12mm, left=1cm, right=2cm}
+\title{\vspace{-3cm}Title}
+\author{Andreas Hofer}
+
+\begin{document}
+	\begin{tabular}{| c | c | c | c | c | c |}
+		\toprule
+		Uhrzeit & Montag & Dienstag & Mittwoch & Donnerstag & Freitag \\ \hline
+		8:15 - 9:45 & - & \cellcolor{yellow} ETB1 & \cellcolor{yellow} ETB1 & \cellcolor{yellow} ETB1 & - \\ \hline
+		10:00 - 11:30 & - & - & \cellcolor{yellow} STUK1 & - & - \\ \hline
+		11:45 - 13:15 & - & - & \cellcolor{yellow} ATPS1 & - & - \\ \hline
+		13:30 - 15:00 & \cellcolor{yellow} EFT & - & - & - & - \\ \hline
+		15:15 - 16:45 & - & - & - & \cellcolor{yellow} STUK1 & - \\ \hline
+		17:00 - 18:30 & - & - & - & - & - \\
+		\bottomrule
+	\end{tabular} \\
+	
+		\begin{tabular}{| c | c | c | c | c | c |}
+		\toprule
+		Uhrzeit & Montag & Dienstag & Mittwoch & Donnerstag & Freitag \\ \hline
+		8:15 - 9:45 & - & \cellcolor{yellow} ETB1 & \cellcolor{yellow} ETB1 & \cellcolor{yellow} ETB1 & - \\ \hline
+		10:00 - 11:30 & - & - & \cellcolor{yellow} STUK1 & - & - \\ \hline
+		11:45 - 13:15 & - & - & \cellcolor{yellow} ATPS1 & - & - \\ \hline
+		13:30 - 15:00 & \cellcolor{yellow} EFT & - & - & - & - \\ \hline
+		15:15 - 16:45 & - & - & - & \cellcolor{yellow} STUK1 & - \\ \hline
+		17:00 - 18:30 & - & - & - & - & - \\
+		\bottomrule
+	\end{tabular}
+	
+\end{document}
