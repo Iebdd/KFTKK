@@ -1,0 +1,92 @@
+\documentclass{article}
+
+\usepackage{geometry}
+\usepackage{makecell}
+\usepackage{array}
+\usepackage{multicol}
+\usepackage{setspace}
+\usepackage{changepage}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{float}
+\newcolumntype{?}{!{\vrule width 1pt}}
+\renewcommand\theadalign{tl}
+\setstretch{1.10}
+\setlength{\parindent}{0pt}
+
+\geometry{top=12mm, left=1cm, right=2cm}
+\title{\vspace{-3cm}22W 520.005 Transkationsrelevantes Informationsmanagement}
+\author{Andreas Hofer}
+
+\begin{document}
+	\section{Einheit 1 - Vorstellung/Translationsrelevante Technologien}
+	\subsection{Organisatorisches}
+	Das gesamte Material, also Folien, werden stets hochgeladen, ist jedoch für die Prüfung nicht ausreichend und es werden wahrscheinlich auch Notizen vonnöten sein um die Prüfung zu bestehen. \\
+	Die Vorlesung ist Vortragsbasiert, also gibt es keine Bewertung während des Kurses, jedoch werden im Jänner die Vorlesungen online sein, wodurch man die Werkzeuge gleich am PC testen kann. \\
+	Der Text von Sharon O'Brien über Fehler in der Maschinentranslation ist 16 Seiten lang und ist bis zum 14.12 zu lesen. Dieser ist auch relevant für die Prüfung. Die Prüfung selbst ist in Präsenz und Single-Choice. Er wird Praxisorientiert sein. \\
+	Es gibt insgesamt 6 Einheiten, wobei 3 vor Weihnachten in Präsenz stattfinden werden. Nach Weihnachten gibt es drei weitere Einheiten, welche online stattfinden werden. \\
+	Der Text ist einem längeren Buch entnommen, welches Open-Access ist weshalb man überall frei darauf zugreifen kann. \\
+	\subsection{Was für Übersetzungstechnologien gibt es?}
+	Heutzutage gibt es einige Technologien mit denen Übersetzt werden kann, oder die einem bei der Übersetzung helfen. Einige Werkzeuge sind DeepL oder Google Translate, welche automatisch übersetzen. Werkezuge die bei der Übersetzung helfen sind Wörterbücher wie Linguee, Reverso aber auch reine Wörterbücher wie Pons oder der Duden.
+	\subsection{Wie teilt man Translationstechnologie ein?}
+	Die Reichweite von Übersetzungswerkzeugen ist außerordentlich groß. Werkzeuge zur Übersetzung sind zwar die beliebtesten, wo es mehrere dutzend unterschiedliche Anbieter gibt, jedoch gibt es auch eine größere Zahl an Anbietern für unter anderem Maschinenlerntechnologie.
+	Übersetzungstechnologien können in zwei Kategorien unterteilt werden:
+	\begin{itemize}
+		\item{Computergestützte Technologien (CAT)}
+		\begin{itemize}
+			\item{Diese kann man weiter einteilen:}
+			\begin{itemize}
+				\item{Nach Grad der Automatisierung: Sind Menschen mehr oder weniger im Prozess des Übersetzens involviert? Es reicht von Vollautomtischen Übersetzern bis zur traditionellen Humantranslation, wo man keine Hilfsmittel verwendet. In der Mitte dieser liegen die \textit{Computer-assisted translation technologies} Machine-aided human translations und human-aided machine translations, abhängig davon werlcher Anteil größer ist. Im Feld des literarischen Übersetzens wird immer noch größtenteils ohne Hilfsmittel übersetzt, da die Übersetzung sehr vom Kontext abhängig ist. Man kann diese Werte als Tabelle darstellen, indem zwischen \textit{Human Translation}, \textit{Computer-aided Translation}, \textit{Machine Translations} unterschieden wird. Den größten Teil macht hierbei das CAT aus, da es einen Übersetzer bei der Tätigkeit unterstützt, was meist die beste Kombination aus Zeit und Effizienz ist.}
+				\item{Nach Verwendung im Übersetzungsprozess: \textit{Before-Translation}, \textit{During-Translation}, \textit{After-Translation}}
+				\item{Nach der Beziehung zum Übersetzungsprozess: Wie Allgemein oder Spezifisch ist die Technologie? Ist es Allgemein wie z.B. Microsoft Word oder ist es spezifischer wie PONS oder Linguee. An unterster Stelle liegen Programme spezifisch für professionelle Übersetzer wie Trados oder Antconc}
+				\item{Nach der Dimension der Translation: Werden die Werkzeuge für die Lehre, professionelle Übersetzer oder im Bereich der Forschung des Übersetzens verwendet?}
+			\end{itemize}
+		\end{itemize}
+	\end{itemize}
+
+	\subsection{Geschichte der Translationstechnologie}
+	Maschinelle Übersetzung besteht theoretisch schon seit den 30er Jahren als die Ersten PCs entwickelt wurden. Die Idee des automatischen Übersetzens ist jedoch bedeutend älter wobei Leibniz und Descartes bereits Überlegungen darüber gemacht hatten.
+	\textbf{George Artsrouni} patentierte 1930 das \textit{Mechanical Brain}. In diesem ersten Versuch wurden spezifische Phrasen abgespeichert, wodurch es nur einen limitierten Anwendungsbereich hatte, jedoch die Basis für spätere Forschung bildete.
+	Gleichzeitig überlegte der Russe \textbf{Petr Petrovich Smirnov-Troyanskij} über eine Übersetzungsmaschine, welche Wörter konjugieren kann, konnte es jedoch nie realisieren. \\
+	\subsubsection{Das Weaver Memorandum}
+	Warren Weaver, bekannt vom Warren Weaver Kommunikationsmodell, überlegte auch was eine Übersetzung ausmacht. Er hatte mehrere Überlegungen: \\
+	\begin{enumerate}
+		\item{Eine Übersetzung muss Kontextbasiert sein, also muss es eine Bank für Geld von einer Bank zum sitzen unterscheiden können}
+		\item{Sie muss logische Komponenten der Sprache abbilden können}
+		\item{Da zu dem Zeitpunkt noch Kodewechsel populär war, dachte er auch über universelle Bedeutungselemente nach, welche in jeder Sprache das selbe bedeuten. Wenn man diese Elemente nun findet könnte eine Maschine jede Sprache in jede Sprache übersetzen. Das hat sich später als fehlerhaft herausgestellt, wodurch diese Überlegeung hinfällig wurde}
+		\item{Es gibt Sprachuniversalia. Dass es Konzepte gibt, welche in jeder Sprache vorhanden sind. Wenn man also die Universalia definiert sollte man diese Worte einfacher übersetzen können.}
+	\end{enumerate}
+	\subsubsection{Erste Schritte}
+	In den 40er Jahren wurden die ersten Überlegungen von maschineller Übersetzung getätigt, wie eben das Weaver Memorandum. Zu diesem Zeit wurde auch Übersetzung als Kodewechsel gesehen.\\
+	1954 wurde das erste System zur Übersetzung vom Englischen zum Russischen vorgestellt, größtenteils um in der Zeit des Kalten Krieges schneller an Informationen zu kommen. Zu diesem Zeitpunkt war man der Ansicht, dass es bald zu einem Durchbruch in der maschinellen Übersetzung kommen würde. Nachdem dies nicht so schnell passierte, wurde das \textit{ALPAC}(Automatic Language Processing Advisory Committee) gegründet. Dieses Kommittee kam zu dem Schluss, dass vollautomatische Übersetzung nicht so schnell erreichbar ist, und man stattdessen in Menschliche Hilfswerkzeuge zur Übersetzung investieren sollte. Dadurch wurde ein Großteil der Forschungsgelder in den USA von maschineller Übersetzung abgezogen, welches zu diesem Zeitpunkt Vorreiter in der Technologie war. Andere Länder wie Japan führten diese Forschung jedoch weiter. \\
+	In den USA wurde aber sehr wohl die Translation Memory entwickelt, welche als Glossar für Übersetzer dienen sollte. \\
+	In Europa gab es auch Forschung für Terminologiedatenbanken wie EURODICAUTOM, welcher Vorgänger des IATE war. Da diese Forschung jedoch in alle Sprachen der Mitgliedsstaaten übersetzt werden musste, war der Prozess etwas verlangsamt. Eine weitere für Rechtstexte von Kanda ist TERMIUM. \\
+	Das IATE ist heute noch öffentlich zugänglich und kann verwendet werden um spezifische Fachtermini in allen Sprachen der EU nachzusehen. So kann man nachsehen, was zum Beispiel die GDPR in verschiedenen Sprachen heißt, wie gut dieser bewertet wurde und woher er stammt. \\
+	In den 80er Jahren tauchten komerzielle Übersetzungstools auf und TRADOS, welches seit 1984 besteht, ist heute noch ein populäres Werkzeug. Zwar hat es vor 40 Jahren sehr anders ausgesehen, doch ist die Kernfunktionalität noch immer die selbe. So versucht das Programm bereits getätigte Übersetzungen zu speichern und den Benutzer darauf hinzuweisen wenn die momentane Übersetzung mit einer früheren ähnlich ist. Es weiß auch, wenn nur ein Teil der Übersetzung ähnlich ist. \\
+	Ab den 1990er Jahren gab es immer mehr Anbieter solcher Technologie, wobei diese Tools auch mehr Funktionalitäten erhielten. Zwar ist die Speicherung von Übersetzungen die Grundfunktionalität, doch kamen mit der Zeit immer mehr ünterstützende Funktionen hinzu. Eines davon ist die Alignierung, mit welchem man externe Texte in das Tool einpflegen kann um diese auch innerhalb des Programms verwenden kann. \\
+	Mit der Zeit wurden diese Tools immer benutzerfreundlicher und es wurde versucht die Tools an den Workflow der Übersetzer anzupassen, anstatt zu erwarten, dass die Menschen sich der Maschine anpassen. Auch wurden Cloud-Funktionen und Integration in andere Programme realisiert. Gleichzeitig wurden offene Standards entwickelt um Terminologiedatenbanken mit anderen Leuten als Datei zu Teilen.
+	Maschinelle Übersetzung erfuhr durch den ALPAC-report einen Dämpfer in den USA. In Japan wurde diese Technologie jedoch weiterentwickelt, und in den 1990er Jahren wurden die ersten statistischen Übersetzungstechnologien veröffentlicht. Google stieg erst 2007 auf statistische Übersetzungstechnologie um und 2016 auf neuronale Übersetzungstechnologien. Dass 2016 neuronale Übersetzer besser geworden waren, wurde durch das maschinelle Qualitätssicherungsverfahren BLEU
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
