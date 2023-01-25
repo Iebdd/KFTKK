@@ -215,6 +215,61 @@
 			\item{Bezieht sich auf die sprachliche Umsetzung, sodass der Stil und die Flüssigkeit des Textes stimmt.}
 		\end{itemize}
 	\end{itemize}
+
+	\section{Maschinelle Übersetzung}
+	Maschinelle Übersetzung teilt sich in drei große Teile: \\
+	\begin{itemize}
+		\item{Regelbasiert}
+		\item{Statistisch}
+		\item{Neuronal}
+	\end{itemize}
+
+	Die ersten Systeme waren regelbasierte Systeme. Die allerersten Systeme waren überhaupt nur ein Text, welcher mit einem Wörterbuch verglichen wird, wodurch die Wörter übersetzt werden. Spätere Systeme stellten sicher, dass diese ebenfalls der Zeilsprachlichen Grammatik entspricht. Ein weiteres theoretisches Modell, welches jedoch in der Praxis nie wirklich umgesetzt wurde, ist das Interlingua-Modell, also dass eine einheitliche Zwischensprache als Medium verwendet wird. So wird der Ausgangstext zuerst in eine abstrakte Repräsentation gebracht, welcher ein Zahlencode, aber auch eine künstliche Sprache wie z.B. Esperanto sein kann und später in die Zielsprache übersetzt wird. Der Vorteil wäre hier, dass man ein gemeinsames Modell der Übersetzung hat wodurch über die Mediumssprache jede Sprache in jede andere übersetzt werden kann. \\
+	Ein Modell zur Darstellung von Regelbasierten Systemen ist die Vauqouis Pyramide, in welcher der Verlauf von einem Transfer zu einer direkten Übersetzung dargestellt wird. So wird es mehr zum Transfer, je mehr der zu übersetzende Text analysiert wird und das endgültige Ziel dieser Analyse wäre die Erstellung eines Interlinguamodells. \\
+	Regelbasierte Systeme funktionierten leider nicht außergewöhnlich gut, da man einen sehr großen Aufwand hatte, jedoch keine besonders guten oder akkuraten Systeme bekam. \\
+	Ein alternativer Weg um diese Regeln zu erlangen ist dem System einen Korpus zu geben wodurch sich dieses dann seine Regeln selbst ableitet. Dieser Korpus muss aligniert werden, also die übersetzten Teile den originalsprachlichen Teilen angepasst werden. Zusätzlich zu diesem zweisprachigen Korpus benötigt das System jedoch auch noch ein einsprachiges Korpus damit es weiß, wie die Sprachfolge in der Zeilsprache ist. Also benötigt ein Statistikbasiertes System jeweils einen Übersetzungs und einen Referenzkorpus. \\
+	Statistische Systeme basieren auf zwei Systemen: \\
+	\begin{itemize}
+		\item{Wortbasierte Systeme}
+		\begin{itemize}
+			\item{Daten werden auf Ebene der Wörter analysiert, wodurch jedem Wort in der Quellsprache ein Wort in der Zielsprache entspricht. Das funktioniert jedoch nur, wenn es genau ein Wort für ein anderes Wort gibt, da Synonyme nicht akkurat dargestellt werden können.}
+		\end{itemize}
+		\item{Phrasenbasierte Systeme}
+		\begin{itemize}
+			\item{Indem Phrasen (Welche eine gewisse Anzahl an Wörtern ist) analysiert werden, kann das System den Kontext von gewissen Wörtern analysieren. Das System kann so Disambiguierungsentscheidungen treffen und zwischen Wörtern wie Bank (Der Institution) und Bank (Der Sitzgelegenheit) unterscheiden.}
+		\end{itemize}
+	\end{itemize}
+	Der Vorteil von diesen Systemen ist, dass man anstatt der Transferregeln selbst generieren zu müssen, nur die Korpora bereitstellen muss. So hat man bedeutend weniger Aufwand, bei oft besseren Ergebnissen. \\
+	Nachteile sind, dass es nur für Sprachen möglich ist, für welche genügend Texte verfügbar sind. Kleinere und nicht umfangreich erforschte Sprachen haben oft nicht genug Textmaterial zur Verfügung um ein Regelwerk erstellen zu können. Ebenfalls funktioniert es nicht so gut bei stark flektierten Sprachen, wobei man jedoch mit Grammatikmodulen diesen Nachteil ausgleichen kann. \\
+	IBM begann 1980 mit der Entwicklung von statistischen Maschinen, und diese waren lange die akkuratesten Systeme. Erst in 2015 stiegen die meisten Übersetzer auf neuronale Systeme um. \\
+	Neuronale Systeme kann man als Weiterentwicklung von statistischen Systemen sehen, da diese auch große Mengen an Daten benötigen, aber statt Statistik versucht Zusammenhänge wie in einem neuronalen Netzwerk auszuwerten. Diese Systeme sind heutzutage am akkuratesten, da die Bedeutungsähnlichkeit von Wörtern genauer erfasst werden kann. \\
+	Neuronale Systeme verwenden Bedeutungsräume um Wörtern Bedeutungen zuzuweisen. Ein Bedeutungsraum kann zum Beispiel sein, dass röt und grün adejtkive sind, da diese oft mit Substantiven verwendet werden. Gleichzeitig weiß das System wo und in welcher Weise gewisse Wörter in welchem Kontext verwendet werden. Diese Bedeutungsräume werden dann für beide Sprachen zugeordnet und dann aneinander angeglichen. In der Mathematik spricht man hier von einer \textit{Zuordnungsfunktion}. Diese Räume werden schließlich in Neuronalen Netzwerken verkettet, welches man trainieren muss. Dieses Training gibt die Aufgabe und die Lösung gleichzeitig an, wodurch das System lernt welche Aufgaben welche Lösungen verlangen. Dadurch werden gewisse Pfade innerhalb des Netzwerkes öfters beansprucht was diese stärkt. Das passiert millionen von Malen, wodurch das System stets besser wird. \\
+	Neuronale Systeme sind sehr gut in Sprachen, in welcher Wörter sehr voneinander Abhängen, wie zum Beispiel im Deutschen. Nachteile sind das begrenzte Vokabular der Systeme, da es oft verwendete Wörter selten verwendeten Wörtern vorzieht. Gleichzeitig sind seltenere Wörter oft sehr schwer zu übersetzen, da diese einfach nicht so oft vorkommen. Auch ist das Training von neuronalen Netzwerken extrem rechenintensiv, wodurch auch oft nur riesige Technologiekonzerne die resourcen haben diese durchzuführen. Zusätzlich haben sie, gleich wie beis statistischen Systemen, Probleme Sprachen mit kleinen verfügbaren Korpora zu übersetzen. \\
+
+	XML-Dokumente haben stets den selben Aufbau. Sie basieren auf Tags, welche die Information umgibt. So kann man \textit{<speaker>} und \textit{</speaker>} um einen Namen schreiben, wodurch das System diesen dann richtig klassifizieren kann. Tags bestehen stets aus einem Ausdruck, welcher mit \textit{<} und \textit{>} umgeben ist. Der beendende Tag hat zusätzlich noch ein \textit{/} um das zu kennzeichnen. \\
+
+	Korpustypologie beschreibt den Typ von Korpus, um den genau benötigten Zweck zu erfüllen. \\
+	So gibt es verschiedene Kropustypen:
+	\begin{itemize}
+		\item{Lernerkorpus}
+		\begin{itemize}
+			\item{Korpus um eine Sprache zu lernen mit annotationen}
+		\end{itemize}
+		\item{Parallelkorpus}
+		\begin{itemize}
+			\item{Korpus aus zwei oder mehr Sprachen, um diese vergleichen zu können}
+		\end{itemize}
+		\item{Translation Memory Daten}
+		\begin{itemize}
+			\item{Verbindungen aus früher getätigten Übersetzungen}
+		\end{itemize}
+	\end{itemize}
+
+	Der Unterschied zwischen Parallelkorpora und Translation Memory Daten ist, dass der Korpus stets im Volltext verfügbar ist. Selbst wenn Teile des Korpus mehrmals vorkommen, werden diese immer wieder gespeichert. In TM stattdessen wird, nachdem man einen Teil ein Mal verwendet hat, dieses immer nur ein Mal abgespeichert. \\
+	
+	
+
+	
 	
 
 

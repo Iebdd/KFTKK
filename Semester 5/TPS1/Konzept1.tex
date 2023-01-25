@@ -1,0 +1,66 @@
+\documentclass[12pt]{report}
+
+\usepackage{geometry}
+\usepackage{makecell}
+\usepackage{array}
+\usepackage{multicol}
+\usepackage{setspace}
+\usepackage[ngerman]{babel}
+\usepackage[ngerman=ngerman-x-latest]{hyphsubst}
+\usepackage{changepage}
+\usepackage{booktabs}
+\usepackage{hanging}
+\usepackage{lipsum}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{fancyhdr}
+\usepackage[style=apa,backend=biber,sorting=ynt]{biblatex}
+%\addbibresource{Literature.bib}
+\newcolumntype{?}{!{\vrule width 1pt}}
+\renewcommand\theadalign{tl}
+\linespread{1.5}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt} % Obere Trennlinie
+\fancyhead[R]{Andreas Hofer}
+
+
+\title{\vspace{-3cm}22W 520.002 Allgemein: Translationswissenschaftliches Proseminar I}
+\author{Andreas Hofer}
+
+\begin{document}
+	\section*{Von BLEU bis METEOR: Drei Jahre der Fortschritte in der Maschinellen Qualitätssicherung}
+	Diese Proseminararbeit beschäftigt sich mit dem Vergleich der drei maschinelle Qualitätssicherungsverfahren BLEU sowie NIST und METEOR, welche auf BLEU basieren und dieses erweitern. Es wird darauf eingegangen, in welcher Weise BLEU die Qualitätssicherung ermöglicht und inwiefern NIST und METEOR dieses Verfahren weiter verbesserten. Zuerst werden die relevanten Begriffe der maschinellen Qualitätssicherung definiert um die Funktionsweise der drei Verfahren zu verstehen sowie einen allgemeinen Überblick zu verschaffen. Im zweiten Kapitel wird auf den grundlegenden Algorithmus von BLEU eingegangen und welche Vorteile dieser über vorhergehende Verfahren hatte, aber auch auf dessen Limitation. Im dritten Kapitel wird BLEU schließlich jeweils um Funktionen durch NIST und METEOR erweitert und es wird auf diese Verbesserungen eingegangen. Am Schluss werden die Unterschiede sowie dessen Bedeutung erneut zusammengefasst. Ziel dieser Proseminararbeit ist es, die rasanten Neuerungen, welche durch die Einführung von BLEU ermöglicht wurden, aufzuzeigen. \\ \\
+	\subsection*{Inhaltsverzeichnis}
+	\begin{itemize}
+		\item[]{Einleitung}
+		\item[1]{Theoretische Grundlage (Powers 2011, Turian 2003) \\ {\footnotesize\textit{Grundbegriffe der maschinellen Qualitätssicherung}}}
+		\item[2]{Funktionsweise von BLEU (Papineni 2002)}
+		\begin{itemize}
+			\item[2.1]{Vorteile von BLEU \\ {\footnotesize\textit{Was macht BLEU besser als andere Verfahren?}}}
+			\item[2.2]{Nachteile von BLEU \\ {\footnotesize\textit{Was kann BLEU nicht identifizieren?}}}
+		\end{itemize}
+		\item[3]{Erweiterung des Verfahren durch NIST und METEOR}
+		\begin{itemize}
+			\item[3.1]{NIST (Doddington 2002) \\ {\footnotesize\textit{Das Mizeinbeziehen von N-Grammhäufigkeit}}}
+			\item[3.2]{METEOR (Bannerjee 2005) \\ {\footnotesize\textit{Die Beachtung der N-Grammposition}}}
+		\end{itemize}
+		\item[4]{Zusammenfassung}
+		\item[]{Bibliographie}
+	\end{itemize}
+\section*{Literaturverzeichnis}
+	\begin{hangparas}{.25in}{1}
+	Banerjee, Satanjeev/Lavie, Alon (2005) \glqq METEOR: An Automatic Metric for MT Evaluation with Improved Correlation with Human Judgments\grqq, in: \textit{Proceedings of the ACL Workshop on Intrinsic and Extrinsic Evaluation Measures for Machine Translation and/or Summarization} 1:1, 65-72. \\
+	\end{hangparas}
+	\begin{hangparas}{.25in}{1}
+	Doddington, George (2002) \glqq Automatic Evaluation of Machine Translation Quality Using N-gram Co-Occurrence Statistics\grqq, in: \textit{HLT '02: Proceedings of the second international conference on Human Language Technology Research} 2:1, 138-145. \\
+	\end{hangparas}
+	\begin{hangparas}{.25in}{1}
+	Papineni, Kishore/Roukos, Salim/Ward, Todd/Zhu, Wei-Jing (2002) \glqq BLEU: a Method for Automatic Evaluation of Machine Translation\grqq, in \textit{Proceedings of the 40th Annual Meeting of the Association for Computational Linguistics}, 40:1, 311-318. \\
+	\end{hangparas}
+	\begin{hangparas}{.25in}{1}
+	Powers, M. W. David (2011) \glqq Evaluation: From Precision, Recall and F-Factorto ROC, Informedness, Markedness \& Correlation\grqq, in: \textit{Journal of Machine Learning Technologies} 2:1, 37-63. \\
+	\end{hangparas}
+	\begin{hangparas}{.25in}{1}
+	Turian, Joseph P./Shen, Luke/Melamed, I. Dan (2003) \glqq Evaluation of machine translation and its evaluation\grqq, in: \textit{Proceedings of Machine Translation SUmmit IX: Papers} 9:1, 1-8. \\
+	\end{hangparas}
+\end{document}
